@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+.admin-header {
+    position: fixed;
+    top: 80px;
+    width: 100%;
+    z-index: 10;
+    padding: 10px;
+}
+
+/* default styling. Nothing to do with freexing first row and column */
+main {
+    display: center;
+    
+}
+
+main>* {
+    border: 1px solid;
+}
+
+table {
+    border-collapse: collapse;
+    overflow: scroll;
+}
+
+td,
+th {
+    border: 1px solid;
+    padding: 10px;
+    min-width: 200px;
+    background: white;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.table-container {
+    margin-top: 30px;
+    position: relative;
+    max-height: 300px;
+    width: 100%;
+}
+
+thead th {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: lightblue;
+}
+
+thead th:first-child {
+    left: 0;
+    z-index: 3;
+}
+
+tbody {
+    overflow: scroll;
+    height: 200px;
+}
+
+tr> :first-child {
+    position: -webkit-sticky;
+    position: sticky;
+    background: lightgreen;
+    left: 0;
+}

@@ -1,0 +1,34 @@
+.button-container {
+    width: 690px;
+    margin: 50px auto;
+    position: relative;
+
+}
+
+.program__register-button {
+    display: none;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #001F3F;
+    border: none;
+    cursor: pointer;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+}
+
+.program__register-button:hover {
+    background-color: green;
+}
+.program__card.active .program__register-button {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.program__card .program__register-button {
+    opacity: 0;
+    transform: translateY(20px);
+}
